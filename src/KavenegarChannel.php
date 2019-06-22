@@ -33,7 +33,7 @@ class KavenegarChannel
      */
     public function send($notifiable, Notification $notification)
     {
-        $method = $notification->getMethod;
+        $method = $notification->getMethod();
         $params = [];
         if (!in_array($method, self::AVAILABLE_METHODS))
         {
